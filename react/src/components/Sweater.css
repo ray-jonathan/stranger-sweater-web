@@ -1,0 +1,19 @@
+.sweater {
+	width: 90vw;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin-left: -20%;
+}
+
+.row-1 {
+	width: 80vw;
+}
+
+.row-2 {
+	width: 85vw;
+}
+.row-3 {
+	width: 80vw;
+}

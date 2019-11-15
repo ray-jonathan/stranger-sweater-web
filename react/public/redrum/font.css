@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'REDRUM';
+  src: url('REDRUM.ttf') format('truetype'),
+       url('REDRUM.woff') format('woff'),
+       url('REDRUM.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
