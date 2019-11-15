@@ -6,12 +6,17 @@ class Input extends React.Component {
 		this.state = {
 			msg: '',
 		};
+		this.inputRef = React.createRef();
 	}
 
 	render() {
 		return (
 			<form onSubmit={this.submitSweater} style={{ position: 'relative' }}>
-				<input style={{ zIndex: 1 }} onChange={this.updateMsg} />
+				<input
+					ref={this.inputRef}
+					style={{ zIndex: 1 }}
+					onChange={this.updateMsg}
+				/>
 				<button>Submit</button>
 			</form>
 		);
@@ -27,7 +32,10 @@ class Input extends React.Component {
 			`https://sweater.jonathan-ray.com/?msg=${this.state.msg}`,
 		);
 		console.log(msg);
-		if (msg === this.state.msg) this.setState({ msg: '' });
+		if (msg === this.state.msg) {
+			this.inputRef.current.value = '';
+			this.setState({ msg: '' });
+		}
 		// otherwise it failed
 	};
 }

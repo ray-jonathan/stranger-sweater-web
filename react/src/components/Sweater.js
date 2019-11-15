@@ -6,15 +6,15 @@ function Sweater(props) {
 	const row1 = alphabet
 		.split('')
 		.slice(0, 8)
-		.map(alpha => <Letter alpha={alpha} />);
+		.map((alpha, i) => <Letter key={`1-${i}`} alpha={alpha} />);
 	const row2 = alphabet
 		.split('')
 		.slice(8, 17)
-		.map(alpha => <Letter alpha={alpha} />);
+		.map((alpha, i) => <Letter key={`2-${i}`} alpha={alpha} />);
 	const row3 = alphabet
 		.split('')
 		.slice(17, 26)
-		.map(alpha => <Letter alpha={alpha} />);
+		.map((alpha, i) => <Letter key={`3-${i}`} alpha={alpha} />);
 	return (
 		<>
 			<ul className='sweater row-1'>{row1}</ul>
