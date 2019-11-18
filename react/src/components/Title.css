@@ -14,7 +14,7 @@
 	flex-direction: column;
 	align-items: center;
 	text-transform: uppercase;
-	font-size: 13.5vw;
+	font-size: 12.5vw;
 	font-weight: 800;
 	/* color: hsl(7, 87%, 6%); */
 	color: hsl(127, 87%, 94%);
@@ -89,7 +89,7 @@
 }
 
 .st-stranger-s {
-	font-size: 22vw;
+	font-size: 20vw;
 	transform: translateX(-30vw);
 	-webkit-transform: translateX(-30vw);
 	animation: 3s slide-right 0.5s forwards;
@@ -130,7 +130,7 @@
 }
 
 .st-stranger-r-2 {
-	font-size: 22vw;
+	font-size: 20vw;
 	opacity: 0;
 	transform: translateX(100vw);
 	-webkit-transform: translateX(100vw);
@@ -167,14 +167,14 @@
 	margin-bottom: -3.5vw;
 	margin-top: 0.5vw;
 	margin-left: 0.7vw;
-	-webkit-animation: 1.75s grow-top 2.75s ease-in-out forwards;
+	-webkit-animation: 1.75s grow-top 2.25s ease-in-out forwards;
 }
 @-webkit-keyframes grow-top {
 	0% {
 		width: 0;
 	}
 	100% {
-		width: 81vw;
+		width: 95vw;
 	}
 }
 @keyframes grow-top {
@@ -182,7 +182,7 @@
 		width: 0;
 	}
 	100% {
-		width: 81vw;
+		width: 95vw;
 	}
 }
 
@@ -194,23 +194,26 @@
 }
 .st-bound-left {
 	width: 0vw;
-	-webkit-animation: 1.75s grow-left 2.5s ease-in-out forwards;
-	animation: 1.75s grow-left 2.5s ease-in-out forwards;
+	margin-left: -6vw;
+	-webkit-animation: 2s grow-left 2s linear forwards;
+	animation: 2s grow-left 2s linear forwards;
 }
 @-webkit-keyframes grow-left {
 	0% {
 		width: 0;
 	}
+
 	100% {
-		width: 9vw;
+		width: 14vw;
 	}
 }
 @keyframes grow-left {
 	0% {
 		width: 0;
 	}
+
 	100% {
-		width: 9vw;
+		width: 14vw;
 	}
 }
 
@@ -219,15 +222,15 @@
 }
 .st-bound-right {
 	width: 0;
-	animation: 2s grow-right 2.5s ease-in-out forwards;
-	-webkit-animation: 2s grow-right 2.5s ease-in-out forwards;
+	animation: 2s grow-right 2.5s ease-in forwards;
+	-webkit-animation: 2s grow-right 2.5s ease-in forwards;
 }
 @keyframes grow-right {
 	0% {
 		width: 0;
 	}
 	100% {
-		width: 16vw;
+		width: 18vw;
 	}
 }
 @-webkit-keyframes grow-right {
@@ -235,7 +238,7 @@
 		width: 0;
 	}
 	100% {
-		width: 16vw;
+		width: 18vw;
 	}
 }
 
@@ -244,9 +247,10 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 	max-width: 85vw;
+	min-width: 85vw;
 	letter-spacing: -0.6vw;
-	font-size: 11.5vw;
-	margin-top: -4vw;
+	font-size: 10.5vw;
+	margin-top: -3.75vw;
 	margin-left: 0.7vw;
 	transform: translateY(110%);
 	animation: 3s glide-up 0.5s forwards;
@@ -314,7 +318,7 @@
 }
 
 .st-bottom p {
-	margin-top: -8.5vw;
+	margin-top: -9.5vw;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
