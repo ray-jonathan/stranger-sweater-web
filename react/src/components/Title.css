@@ -28,27 +28,27 @@
 		0 0 20px #450100; */
 	letter-spacing: -0.6vw;
 	position: relative;
-	opacity: 0%;
+	opacity: 0;
 	transform: translateY(-20%);
 	animation: 3s fade-in 0.5s forwards;
 	-webkit-animation: 3s fade-in 0.5s forwards;
 }
 @keyframes fade-in {
 	20% {
-		opacity: 30%;
+		opacity: 0.3;
 	}
 	100% {
 		transform: translateY(10%);
-		opacity: 100%;
+		opacity: 1;
 		width: 100%;
 	}
 }
 @-webkit-keyframes fade-in {
 	20% {
-		opacity: 30%;
+		opacity: 0.3;
 	}
 	100% {
-		opacity: 100%;
+		opacity: 1;
 		width: 100%;
 	}
 }
@@ -109,7 +109,7 @@
 }
 .st-stranger-e {
 	transform: translateY(-7vw);
-	opacity: 0%;
+	opacity: 0;
 	animation: 2s slide-down 1s forwards;
 }
 @keyframes slide-down {
@@ -279,7 +279,7 @@
 .st-things-w {
 	letter-spacing: -0.3vw;
 	transform: translateY(2vw);
-	opacity: 0%;
+	opacity: 0;
 	animation: 2.5s slide-up 1s forwards;
 	-webkit-animation: 2.5s slide-up 1s forwards;
 }
@@ -297,19 +297,19 @@
 	margin-left: 1vw;
 	letter-spacing: -0.3vw;
 	transform: translateY(4vw);
-	opacity: 0%;
+	opacity: 0;
 	animation: 2s slide-up 0.5s forwards;
 }
 @keyframes slide-up {
 	100% {
 		transform: translateY(0vw);
-		opacity: 100%;
+		opacity: 1;
 	}
 }
 @-webkit-keyframes slide-up {
 	100% {
 		transform: translateY(0vw);
-		opacity: 100%;
+		opacity: 1;
 	}
 }
 
