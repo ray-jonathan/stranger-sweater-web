@@ -1,5 +1,5 @@
 .title {
-	font-family: benguiatbold;
+	font-family: 'BenguiatBold', 'serif';
 }
 .title {
 	background: #fff;
@@ -15,7 +15,6 @@
 	align-items: center;
 	text-transform: uppercase;
 	font-size: 13.5vw;
-	font-family: 'BenguiatBold', 'Times-New-Roman', 'SERIF';
 	font-weight: 800;
 	/* color: hsl(7, 87%, 6%); */
 	color: hsl(127, 87%, 94%);
