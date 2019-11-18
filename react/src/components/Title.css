@@ -167,6 +167,7 @@
 	margin-bottom: -3.5vw;
 	margin-top: 0.5vw;
 	margin-left: 0.7vw;
+	animation: 1.75s grow-top 2.25s ease-in-out forwards;
 	-webkit-animation: 1.75s grow-top 2.25s ease-in-out forwards;
 }
 @-webkit-keyframes grow-top {
@@ -322,9 +323,9 @@
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-	/* .st {
+	.st {
 		margin-top: 10vw;
-	} */
+	}
 	.st-stranger-r-2 {
 		opacity: 1;
 	}
