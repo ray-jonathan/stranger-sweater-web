@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'BenguiatBold';
+	src: url('BenguiatBold.ttf') format('truetype'),
+		url('BenguiatBold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

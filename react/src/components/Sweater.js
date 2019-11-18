@@ -16,11 +16,11 @@ function Sweater(props) {
 		.slice(17, 26)
 		.map((alpha, i) => <Letter key={`3-${i}`} alpha={alpha} />);
 	return (
-		<>
+		<div className='sweater-container'>
 			<ul className='sweater row-1'>{row1}</ul>
 			<ul className='sweater row-2'>{row2}</ul>
 			<ul className='sweater row-3'>{row3}</ul>
-		</>
+		</div>
 	);
 }
 export default Sweater;
