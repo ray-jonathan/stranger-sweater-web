@@ -266,3 +266,11 @@
 	-webkit-animation-delay: 4s, 2.5s;
 	animation-delay: 4s, 2.5s;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+	.snowflake {
+		-webkit-animation: none !important;
+		animation: none !important;
+		display: none;
+	}
+}

@@ -1,11 +1,13 @@
 .input {
 	position: absolute;
-	transform: translateY(20vw);
+	transform: translateY(20vh);
 	filter: invert(75%);
 }
+
 .input input {
 	font-family: 'Redrum', 'san-serif';
 }
+
 .submit {
 	font-family: 'BenguiatBold', 'serif';
 	border-radius: 10%;
@@ -22,7 +24,6 @@
 }
 .submit:hover:after {
 	color: cyan;
-
 	text-shadow: 1px 1px 0px white;
 	transition: all 0.3s 0.3s ease-in;
 }
@@ -45,11 +46,19 @@
 
 @supports (-webkit-overflow-scrolling: touch) {
 	.submit:hover {
-		color: white;
+		color: black;
 		text-shadow: none;
 		transition: none;
+		background-color: white;
+	}
+	.submit:hover:after {
+		color: black;
+		text-shadow: none;
+		transition: none;
+		animation: none;
 	}
 	.submit.bonus:hover:after {
+		transition: none;
 		animation: none;
 	}
 }
