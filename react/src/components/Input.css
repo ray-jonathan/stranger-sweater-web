@@ -1,0 +1,44 @@
+.input {
+	position: absolute;
+	transform: translateY(20vw);
+	filter: invert(75%);
+}
+.input input {
+	font-family: 'Redrum', 'san-serif';
+}
+.submit {
+	font-family: 'BenguiatBold', 'serif';
+	border-radius: 10%;
+	content: 'stuff';
+	position: relative;
+}
+.submit:after {
+	font-family: 'BenguiatBold', 'serif';
+	content: 'SUBMIT';
+}
+.submit:hover {
+	background-color: cyan;
+}
+.submit:hover:after {
+	color: cyan;
+
+	text-shadow: 1px 1px 0px white;
+	transition: all 0.3s 0.3s ease-in;
+}
+.submit.bonus:hover:after {
+	/* text-shadow: 0px 25px 0px #00ffff00; */
+	animation: 0.5s drop-word 0.1s forwards ease-in;
+}
+@keyframes drop-word {
+	0% {
+		color: white;
+		text-shadow: 1px 1px 0px rgba(0, 255, 255, 1);
+	}
+	50% {
+		color: rbga(255, 255, 255, 0.75);
+		text-shadow: 0px 1em 0px rgba(0, 255, 255, 1);
+	}
+	100% {
+		text-shadow: 0px 2em 0px rgba(0, 255, 255, 0);
+	}
+}
