@@ -11,6 +11,7 @@
 	border-radius: 10%;
 	content: 'stuff';
 	position: relative;
+	background-color: white;
 }
 .submit:after {
 	font-family: 'BenguiatBold', 'serif';
@@ -26,7 +27,6 @@
 	transition: all 0.3s 0.3s ease-in;
 }
 .submit.bonus:hover:after {
-	/* text-shadow: 0px 25px 0px #00ffff00; */
 	animation: 0.5s drop-word 0.1s forwards ease-in;
 }
 @keyframes drop-word {
@@ -40,5 +40,12 @@
 	}
 	100% {
 		text-shadow: 0px 2em 0px rgba(0, 255, 255, 0);
+	}
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+	.submit:hover {
+	}
+	.submit.bonus:hover:after {
 	}
 }
