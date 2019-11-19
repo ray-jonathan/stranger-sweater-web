@@ -45,7 +45,11 @@
 
 @supports (-webkit-overflow-scrolling: touch) {
 	.submit:hover {
+		color: white;
+		text-shadow: none;
+		transition: none;
 	}
 	.submit.bonus:hover:after {
+		animation: none;
 	}
 }
