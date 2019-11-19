@@ -3,4 +3,36 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+}
+.loader-fade-out {
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	height: 103vh;
+	width: 100vw;
+	background-color: black;
+	opacity: 0;
+	animation: 0.5s load-fade-out 5.5s forwards ease-in;
+}
+@keyframes load-fade-out {
+	100% {
+		opacity: 1;
+	}
+}
+.loader-fade-in {
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	height: 103vh;
+	width: 100vw;
+	background-color: black;
+	opacity: 1;
+	animation: 2s load-fade-in 0.1s forwards ease-out;
+}
+
+@keyframes load-fade-in {
+	100% {
+		opacity: 0;
+	}
 }

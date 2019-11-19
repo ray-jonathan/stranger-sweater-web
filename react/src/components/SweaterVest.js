@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Sweater from './Sweater';
 import axios from 'axios';
+import useInterval from '../hooks/useInterval';
 
 export default props => {
 	let [phrase, setPhrase] = useState('HO HO HO');
@@ -19,23 +20,3 @@ export default props => {
 	}, 750);
 	return <Sweater lightUp={phrase[letterIndex]} />;
 };
-
-function useInterval(callback, delay) {
-	const savedCallback = useRef();
-
-	// Remember the latest callback.
-	useEffect(() => {
-		savedCallback.current = callback;
-	}, [callback]);
-
-	// Set up the interval.
-	useEffect(() => {
-		function tick() {
-			savedCallback.current();
-		}
-		if (delay !== null) {
-			let id = setInterval(tick, delay);
-			return () => clearInterval(id);
-		}
-	}, [delay]);
-}

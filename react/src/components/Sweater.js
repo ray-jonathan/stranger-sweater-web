@@ -1,7 +1,7 @@
 import React from 'react';
 import Letter from './Letter';
 import './Sweater.css';
-function Sweater({ lightUp }) {
+export default ({ lightUp }) => {
 	const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 	const row1 = alphabet
 		.split('')
@@ -28,5 +28,4 @@ function Sweater({ lightUp }) {
 			<ul className='sweater row-3'>{row3}</ul>
 		</div>
 	);
-}
-export default Sweater;
+};

@@ -1,11 +1,9 @@
 .title {
 	font-family: 'BenguiatBold', 'serif';
-}
-.title {
 	background: #fff;
 	overflow: hidden;
 	width: 100%;
-	height: 30vw;
+	min-height: 30vw;
 }
 
 .st {
@@ -331,5 +329,8 @@
 	}
 	.st-things-s {
 		opacity: 1;
+	}
+	.title {
+		min-height: 33vw;
 	}
 }

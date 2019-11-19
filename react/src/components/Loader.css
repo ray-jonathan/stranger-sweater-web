@@ -1,0 +1,22 @@
+.loader {
+	height: 80vh;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.loader-background::before {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: -3vw;
+	width: 100%;
+	/*  */
+	/* Height is derived by the height of the .title element, 
+	.sweater-container, and the top (-3vw) for this own element */
+	min-height: 103vh;
+	/*  */
+	/*  */
+	opacity: 0.3;
+	background-image: url('../pattern.svg');
+}

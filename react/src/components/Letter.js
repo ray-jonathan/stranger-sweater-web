@@ -4,7 +4,7 @@ const YELLOW = 'yellow';
 const BLUE = 'blue';
 const PINK = 'pink';
 const GREEN = 'green';
-function Letter({ alpha, lightUp = null }) {
+export default ({ alpha, lightUp = null }) => {
 	const colorLookup = {
 		A: YELLOW,
 		B: BLUE,
@@ -39,5 +39,4 @@ function Letter({ alpha, lightUp = null }) {
 			<div className='letter'>{alpha}</div>
 		</li>
 	);
-}
-export default Letter;
+};
