@@ -76,49 +76,51 @@
 .sweater li:last-child:after {
 	content: none;
 }
+
 .flash-yellow {
-	background: rgba(209, 183, 68, 0.2);
+	background: #fff;
 	box-shadow: 0px 0.3em 1.4em 1em rgba(209, 183, 68, 1);
-	animation: 0.8s fade-yellow forwards;
+	animation: 0.8s fade-yellow forwards ease-out;
 }
 @keyframes fade-yellow {
 	100% {
-		background: rgba(209, 183, 68, 0.7);
+		background: rgba(209, 183, 68, 0.05);
 		box-shadow: 0px 0.3em 0.2em 1em rgba(209, 183, 68, 0.502);
 	}
 }
+
 .flash-blue {
-	background: rgba(18, 157, 221, 0.2);
+	background: #fff;
 	box-shadow: 0px 0.3em 1.4em 1em rgba(18, 157, 221, 1);
-	animation: 0.8s fade-blue forwards;
+	animation: 0.8s fade-blue forwards ease-out;
 }
 @keyframes fade-blue {
 	100% {
-		background: rgba(18, 157, 221, 0.7);
+		background: rgba(18, 157, 221, 0.05);
 		box-shadow: 0px 0.3em 0.2em 1em rgba(18, 157, 221, 0.502);
 	}
 }
 
 .flash-pink {
-	background: rgba(240, 36, 131, 0.2);
+	background: #fff;
 	box-shadow: 0px 0.3em 1.4em 1em rgba(240, 36, 131, 1);
-	animation: 0.8s fade-pink forwards;
+	animation: 0.8s fade-pink forwards ease-out;
 }
 @keyframes fade-pink {
 	100% {
-		background: rgba(240, 36, 131, 0.6);
+		background: rgba(240, 36, 131, 0.03);
 		box-shadow: 0px 0.3em 0.2em 1em rgba(240, 36, 131, 0.502);
 	}
 }
 
 .flash-green {
-	background: rgba(66, 178, 98, 0.05);
+	background: #fff;
 	box-shadow: 0px 0.3em 1.4em 1em rgba(66, 178, 98, 1);
-	animation: 0.8s fade-green forwards;
+	animation: 0.8s fade-green forwards ease-out;
 }
 @keyframes fade-green {
 	100% {
-		background: rgba(66, 178, 98, 0.7);
+		background: rgba(66, 178, 98, 0.03);
 		box-shadow: 0px 0.3em 0.2em 1em rgba(66, 178, 98, 0.502);
 	}
 }
