@@ -6,6 +6,7 @@ import UpsideDown from './components/UpsideDown';
 import Loader from './components/Loader';
 import FadeIn from './components/FadeIn';
 import useTimeout from './hooks/useTimeout';
+import Screenshot from './components/Screenshot';
 
 export default () => {
 	const [contents, setContents] = useState(
