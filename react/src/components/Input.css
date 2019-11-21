@@ -1,16 +1,22 @@
 .input {
 	position: absolute;
-	transform: translateY(20vh);
+	transform: translateY(40vh);
 	filter: invert(75%);
 }
 
 .input input {
 	font-family: 'Redrum', 'san-serif';
+	background: black;
+	color: white;
+	height: 3vh;
+	width: 40vw;
 }
 
 .submit {
 	font-family: 'BenguiatBold', 'serif';
 	border-radius: 10%;
+	height: 4vh;
+	width: 6rem;
 	content: 'stuff';
 	position: relative;
 	background-color: white;

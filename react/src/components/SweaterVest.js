@@ -12,7 +12,7 @@ export default props => {
 			data: { msg },
 		} = await axios.get('https://sweater.jonathan-ray.com/msg');
 		setPhrase(msg.toUpperCase());
-		console.log(msg);
+		// console.log(msg);
 	}, phrase.length * 750);
 	useInterval(async () => {
 		if (letterIndex > phrase.length - 1) return setLetterIndex(0);

@@ -18,9 +18,14 @@ export default props => {
 				<div className='snowflake'>●</div>
 				<div className='snowflake'>●</div>
 			</div>
-			{/* <div> */}
 			<Input />
-			{/* </div> */}
+			<div className='attribution'>
+				Having fun? Learn more about{' '}
+				<a href='https://github.com/ray-jonathan/stranger-sweater-web'>
+					this project
+				</a>{' '}
+				and <a href='https://jonathan-ray.com'>the creator.</a>
+			</div>
 		</div>
 	);
 };

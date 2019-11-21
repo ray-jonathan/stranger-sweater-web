@@ -6,7 +6,6 @@ import UpsideDown from './components/UpsideDown';
 import Loader from './components/Loader';
 import FadeIn from './components/FadeIn';
 import useTimeout from './hooks/useTimeout';
-import Screenshot from './components/Screenshot';
 
 export default () => {
 	const [contents, setContents] = useState(
@@ -22,6 +21,12 @@ export default () => {
 				<div className='sweater-background'>
 					<Title />
 					<SweaterVest />
+				</div>
+				<div className='helper-text'>
+					<div className='helper-text-upper'>
+						scroll down to craft your message
+					</div>
+					<div className='helper-text-lower'>scroll up to see your message</div>
 				</div>
 				<UpsideDown />
 			</div>,
