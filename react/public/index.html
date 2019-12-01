@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1"
+		/>
 		<meta name="theme-color" content="#000000" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -22,46 +25,5 @@
 	<body>
 		<div id="root"></div>
 	</body>
-	<script>
-		function getScrollPercent() {
-			var h = document.documentElement,
-				b = document.body,
-				st = 'scrollTop',
-				sh = 'scrollHeight';
-			return ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
-		}
-
-		function debounce(func, timeout) {
-			let timer;
-			return (...args) => {
-				const next = () => func(...args);
-				if (timer) {
-					clearTimeout(timer);
-				}
-				timer = setTimeout(next, timeout > 0 ? timeout : 250);
-			};
-		}
-
-		// Listen for resize events
-		window.addEventListener(
-			'scroll',
-			debounce(() => {
-				if (getScrollPercent() > 30) {
-					window.scrollTo({
-						top: document.body.clientHeight,
-						left: 0,
-						behavior: 'smooth',
-					});
-				}
-				if (getScrollPercent() < 40) {
-					window.scrollTo({
-						top: 0,
-						left: 0,
-						behavior: 'smooth',
-					});
-				}
-			}),
-		);
-	</script>
 	<script src="./smoothScrollPolyfill.js"></script>
 </html>
