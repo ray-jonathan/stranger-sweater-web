@@ -31,9 +31,7 @@ class Input extends React.Component {
 		this.buttonRef.current.className = 'submit bonus';
 		const {
 			data: { msg },
-		} = await axios.post(
-			`https://sweater.jonathan-ray.com/?msg=${this.state.msg}`,
-		);
+		} = await axios.post(`https://strangersweater.com/?msg=${this.state.msg}`);
 		console.log(msg);
 		if (msg === this.state.msg) {
 			this.inputRef.current.value = '';

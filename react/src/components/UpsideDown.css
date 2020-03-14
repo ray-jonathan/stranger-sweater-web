@@ -18,14 +18,14 @@
 	background-size: 30vw;
 	background-repeat: no-repeat;
 	filter: invert(75%) blur(0.8px);
-	background-image: url(https://sweater.jonathan-ray.com/trees/tree1.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree1.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree2.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree3.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree1.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree4.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree3.svg),
-		url(https://sweater.jonathan-ray.com/trees/tree4.svg);
+	background-image: url(https://strangersweater.com/trees/tree1.svg),
+		url(https://strangersweater.com/trees/tree1.svg),
+		url(https://strangersweater.com/trees/tree2.svg),
+		url(https://strangersweater.com/trees/tree3.svg),
+		url(https://strangersweater.com/trees/tree1.svg),
+		url(https://strangersweater.com/trees/tree4.svg),
+		url(https://strangersweater.com/trees/tree3.svg),
+		url(https://strangersweater.com/trees/tree4.svg);
 	position: relative;
 	z-index: 0;
 }

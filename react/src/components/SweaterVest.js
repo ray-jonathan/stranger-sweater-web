@@ -10,7 +10,7 @@ export default props => {
 	useInterval(async () => {
 		const {
 			data: { msg },
-		} = await axios.get('https://sweater.jonathan-ray.com/msg');
+		} = await axios.get('https://strangersweater.com/msg');
 		setPhrase(msg.toUpperCase());
 		// console.log(msg);
 	}, phrase.length * 750);
